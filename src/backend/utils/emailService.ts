@@ -7,14 +7,18 @@ const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'alec@alexandermunz.de';
 const createTransporter = () => {
     // Prüfen ob SMTP konfiguriert ist
     if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
+        const port = parseInt(process.env.SMTP_PORT || '465');
         return nodemailer.createTransport({
             host: process.env.SMTP_HOST,
-            port: parseInt(process.env.SMTP_PORT || '587'),
-            secure: false,
+            port: port,
+            secure: port === 465, // SSL für Port 465, STARTTLS für andere
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASS
-            }
+            },
+            connectionTimeout: 10000, // 10 Sekunden Timeout
+            greetingTimeout: 5000,
+            socketTimeout: 10000
         });
     }
 

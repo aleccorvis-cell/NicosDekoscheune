@@ -13,6 +13,9 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Trust proxy for Render/Cloudflare (wichtig für rate limiting)
+app.set('trust proxy', 1);
+
 // Datenbank Initialisierung
 initDb();
 seedAdmin().catch(console.error);
