@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Nicos Dekoscheune</title>
+    <link href="/output.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="antialiased flex items-center justify-center min-h-screen p-6">
+
+    <div class="glass-panel max-w-md w-full p-12 text-center relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-orange-500 to-orange-700"></div>
+
+        <h1 class="text-3xl font-serif font-bold text-white mb-2">Admin Login</h1>
+        <p class="text-stone-400 mb-8">Nicos Dekoscheune</p>
+
+        <form id="loginForm" class="space-y-6 text-left">
+            <div>
+                <label for="username" class="block text-sm font-medium text-stone-300 mb-1">Benutzername</label>
+                <input type="text" id="username" name="username" required class="glass-input w-full"
+                    placeholder="Benutzername">
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-medium text-stone-300 mb-1">Passwort</label>
+                <input type="password" id="password" name="password" required class="glass-input w-full"
+                    placeholder="Passwort">
+            </div>
+
+            <div id="errorMessage"
+                class="hidden text-red-400 text-sm text-center bg-red-500/10 p-2 rounded border border-red-500/20">
+                Fehler bei der Anmeldung
+            </div>
+
+            <button type="submit" class="glass-button w-full justify-center">
+                Anmelden
+            </button>
+
+            <div class="text-center pt-4">
+                <button type="button" id="forgotPasswordBtn"
+                    class="text-sm text-stone-400 hover:text-orange-400 transition-colors">
+                    Passwort vergessen?
+                </button>
+            </div>
+        </form>
+
+        <div id="resetConfirmation" class="hidden mt-6 text-center">
+            <div class="bg-green-500/10 border border-green-500/20 p-4 rounded-lg">
+                <p class="text-green-400 text-sm">E-Mail zum Zurücksetzen wurde gesendet!</p>
+                <p class="text-stone-400 text-xs mt-2">Bitte prüfe dein Postfach.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

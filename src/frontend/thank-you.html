@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vielen Dank - Nicos Dekoscheune</title>
+    <link href="/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/silktide-consent-manager.css">
+    <script src="/js/silktide-consent-manager.js"></script>
+    <script src="/js/cookie-init.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="antialiased bg-stone-900 text-stone-100 font-sans min-h-screen flex flex-col">
+
+    <!-- Main Content Centered -->
+    <main class="flex-grow flex items-center justify-center p-6 relative z-10">
+        <div class="glass-panel max-w-2xl w-full p-12 text-center relative overflow-hidden">
+            <!-- Decoration -->
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-orange-500 to-orange-700"></div>
+
+            <div
+                class="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-500/20 text-green-400 mb-6">
+                <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+
+            <h1 class="text-4xl font-serif font-bold text-white mb-4">Vielen Dank für Ihre Bestellung!</h1>
+
+            <p class="text-lg text-stone-300 mb-8 leading-relaxed">
+                Wir haben Ihre Bestellung erhalten. Sie erhalten in Kürze eine E-Mail mit einer Zusammenfassung.
+            </p>
+
+            <div class="bg-white/5 border border-white/10 rounded-xl p-6 mb-8 text-left">
+                <h3 class="text-orange-400 font-bold mb-2 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Wichtiger Hinweis
+                </h3>
+                <p class="text-stone-400 text-sm">
+                    Bitte beachten Sie, dass durch diese Bestellbestätigung noch kein Kaufvertrag zustande kommt.
+                    Der Vertragsschluss erfolgt erst durch eine separate Auftragsbestätigung unsererseits oder durch
+                    Versand
+                    der Ware,
+                    wie in unseren <a href="/agb.html" target="_blank"
+                        class="text-orange-400 underline hover:text-orange-300">AGB</a>
+                    beschrieben.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <a href="/" class="glass-button inline-flex items-center gap-2">
+                    Zurück zum Shop
+                </a>
+                <p class="text-stone-500 text-sm animate-pulse">
+                    Leite weiter in <span id="countdown" class="text-orange-500 font-bold">5</span> Sekunden...
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/5 bg-stone-900/40 backdrop-blur-md z-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex gap-6 text-sm text-stone-400">
+                <a href="/impressum.html" class="hover:text-white transition-colors">Impressum</a>
+                <a href="/datenschutz.html" class="hover:text-white transition-colors">Datenschutz</a>
+                <a href="/agb.html" class="hover:text-white transition-colors">AGB</a>
+            </div>
+            <div class="text-stone-500 text-sm font-light tracking-wide text-center">
+                Copyright 2025 webdesign: starmindsdesign by alex 💻
+            </div>
+            <div class="flex gap-4">
+                <a href="https://www.instagram.com/nicos_dekoscheune/" target="_blank" rel="noopener noreferrer"
+                    class="text-stone-400 hover:text-orange-500 transition-colors">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let count = 5;
+            const el = document.getElementById('countdown');
+            const interval = setInterval(() => {
+                count--;
+                if (el) el.textContent = count;
+                if (count <= 0) {
+                    clearInterval(interval);
+                    window.location.href = '/';
+                }
+            }, 1000);
+        });
+    </script>
+
+</body>
+
+</html>

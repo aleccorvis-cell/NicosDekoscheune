@@ -1,0 +1,40 @@
+{
+    "name": "secure-webshop",
+    "version": "1.0.0",
+    "description": "Secure Webshop with Admin Dashboard",
+    "type": "module",
+    "scripts": {
+        "start": "node --experimental-strip-types src/backend/server.ts",
+        "dev": "node --watch --experimental-strip-types src/backend/server.ts",
+        "build:css": "npx tailwindcss -i ./src/frontend/input.css -o ./public/output.css --watch"
+    },
+    "dependencies": {
+        "@types/body-parser": "^1.19.6",
+        "@types/multer": "^2.0.0",
+        "argon2": "^0.31.2",
+        "better-sqlite3": "^9.4.1",
+        "body-parser": "^2.2.1",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.4.1",
+        "express": "^4.21.0",
+        "express-rate-limit": "^7.1.5",
+        "helmet": "^7.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "multer": "^2.0.2",
+        "nodemailer": "^7.0.12",
+        "sharp": "^0.34.5",
+        "zod": "^3.22.4"
+    },
+    "devDependencies": {
+        "@types/better-sqlite3": "^7.6.9",
+        "@types/cookie-parser": "^1.4.6",
+        "@types/express": "^4.17.21",
+        "@types/jsonwebtoken": "^9.0.5",
+        "@types/node": "^20.11.16",
+        "@types/nodemailer": "^7.0.4",
+        "autoprefixer": "^10.4.17",
+        "postcss": "^8.4.33",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5.3.3"
+    }
+}
